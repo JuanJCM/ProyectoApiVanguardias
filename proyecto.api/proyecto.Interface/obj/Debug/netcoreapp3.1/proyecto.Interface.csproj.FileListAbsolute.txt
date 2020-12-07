@@ -1,0 +1,5 @@
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.Interface\bin\Debug\netcoreapp3.1\proyecto.Interface.deps.json
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.Interface\bin\Debug\netcoreapp3.1\proyecto.Interface.dll
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.Interface\obj\Debug\netcoreapp3.1\proyecto.Interface.csprojAssemblyReference.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.Interface\obj\Debug\netcoreapp3.1\proyecto.Interface.AssemblyInfoInputs.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.Interface\obj\Debug\netcoreapp3.1\proyecto.Interface.AssemblyInfo.cs
