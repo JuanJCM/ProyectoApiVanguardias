@@ -5,13 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
     <Folder Include="Migrations\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\proyecto.api\proyecto.api.csproj" />
+    <ProjectReference Include="..\proyecto.Core\proyecto.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using proyecto.Core.Entities;
-using proyecto.Interface.Configurations;
-namespace proyecto.Interface
+using proyecto.Infrastructure.Configurations; 
+
+namespace proyecto.Infrastructure
 {
     public class ProyectoDbContext : DbContext
     {
@@ -12,20 +13,19 @@ namespace proyecto.Interface
 
         }
         public DbSet<Ingredient> Ingredient { get; set; }
-        public DbSet<List> List { get; set; }      
-        public DbSet<Recepy> Recepy{get; set;}
+        public DbSet<GroceryList> List { get; set; }      
+        public DbSet<Recipe> Recepy{get; set;}
         public DbSet<Reminder> Reminder { get; set; }
         public DbSet<User> User { get; set; }
 
-        protected override void OnModeCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            /*
-            modelBuilder.ApplyConfiguration(new IngredientConfiguration()); 
-            modelBuilder.ApplyConfiguration(new ListConfiguration());
-            modelBuilder.ApplyConfiguration(new RecepyConfiguration());
+
+            modelBuilder.ApplyConfiguration(new IngredientConfiguration());
+            modelBuilder.ApplyConfiguration(new GroceryListConfiguration());
+            modelBuilder.ApplyConfiguration(new RecipeConfiguration());
             modelBuilder.ApplyConfiguration(new ReminderConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-             */
 
         }
     }

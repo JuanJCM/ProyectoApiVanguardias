@@ -161,6 +161,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "proyecto.api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/proyecto.api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/proyecto.api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "proyecto.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/proyecto.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/proyecto.Core.dll": {}
+        }
       }
     }
   },
@@ -520,31 +543,39 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "proyecto.api/1.0.0": {
+      "type": "project",
+      "path": "../proyecto.api/proyecto.api.csproj",
+      "msbuildProject": "../proyecto.api/proyecto.api.csproj"
+    },
+    "proyecto.Core/1.0.0": {
+      "type": "project",
+      "path": "../proyecto.Core/proyecto.Core.csproj",
+      "msbuildProject": "../proyecto.Core/proyecto.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.EntityFrameworkCore >= 5.0.0"
+      "Microsoft.EntityFrameworkCore >= 5.0.0",
+      "proyecto.Core >= 1.0.0",
+      "proyecto.api >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Juan Carranza\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ejzp_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Interface.csproj",
-      "projectName": "proyecto.Interface",
-      "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Interface.csproj",
-      "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
+      "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+      "projectName": "proyecto.Infrastructure",
+      "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -556,7 +587,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj"
+            },
+            "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -567,6 +606,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -584,11 +624,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

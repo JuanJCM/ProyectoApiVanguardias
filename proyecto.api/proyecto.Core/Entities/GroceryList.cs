@@ -4,11 +4,16 @@ using System.Text;
 
 namespace proyecto.Core.Entities
 {
-    class List
+    public class GroceryList : BaseEntity
     {
-        public int Id { get; set; }
+
+        public GroceryList()
+        {
+            Items = new List<Ingredient>();
+        }
+
         public int UserId { get; set; }
         public string Description { get; set; }
-        public  List<Ingredient> ingredients { get; set; }
+        public  ICollection<Ingredient> Items { get; set; }
     }
 }

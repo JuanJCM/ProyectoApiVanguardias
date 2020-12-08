@@ -1,0 +1,9 @@
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\bin\Debug\netcoreapp3.1\proyecto.Core.deps.json
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\bin\Debug\netcoreapp3.1\proyecto.Core.dll
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\bin\Debug\netcoreapp3.1\proyecto.Core.pdb
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.csprojAssemblyReference.cache
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.AssemblyInfoInputs.cache
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.AssemblyInfo.cs
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.csproj.CoreCompileInputs.cache
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.dll
+C:\Users\ejzp_\Source\Repos\proyecto.api\proyecto.api\proyecto.Core\obj\Debug\netcoreapp3.1\proyecto.Core.pdb
