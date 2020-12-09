@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 //using proyecto.api.Middlewares;
 using proyecto.Core.Interfaces;
+using proyecto.Core.Repositories;
 using proyecto.Core.Services;
 using proyecto.Infrastructure;
 using proyecto.Infrastructure.Repositories;

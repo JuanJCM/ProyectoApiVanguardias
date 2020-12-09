@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace proyecto.Core.Interfaces
+namespace proyecto.Core.Repositories
 {
     public interface IRepository<T>
     {
@@ -15,7 +15,7 @@ namespace proyecto.Core.Interfaces
 
         T Add(T entity);
 
-        void Update(T entity);
+        T Update(T entity);
 
         int SaveChanges();
     }

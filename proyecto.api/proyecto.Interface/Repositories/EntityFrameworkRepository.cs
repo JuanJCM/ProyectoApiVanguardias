@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using proyecto.Core.Entities;
-using proyecto.Core.Interfaces;
+using proyecto.Core.Repositories;
 
 namespace proyecto.Infrastructure.Repositories
 {
@@ -40,10 +40,11 @@ namespace proyecto.Infrastructure.Repositories
             return entity;
         }
 
-        public void Update(T entity)
+        public T Update(T entity)
         {
             _ProyectoDbContext.Entry(entity).State = EntityState.Modified;
             _ProyectoDbContext.SaveChanges();
+            return entity;
         }
 
         public int SaveChanges()

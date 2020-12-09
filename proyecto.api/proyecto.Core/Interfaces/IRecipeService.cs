@@ -8,5 +8,6 @@ namespace proyecto.Core.Interfaces
 {
     public interface IRecipeService
     {
+
     }
 }

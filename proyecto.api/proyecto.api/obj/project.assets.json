@@ -454,7 +454,10 @@
         },
         "runtime": {
           "bin/placeholder/proyecto.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "proyecto.Infrastructure/1.0.0": {
         "type": "project",
@@ -470,7 +473,10 @@
         },
         "runtime": {
           "bin/placeholder/proyecto.Infrastructure.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
