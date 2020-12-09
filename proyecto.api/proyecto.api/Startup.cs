@@ -4,12 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+//using proyecto.api.Middlewares;
+using proyecto.Core.Interfaces;
+using proyecto.Core.Services;
+using proyecto.Infrastructure;
+using proyecto.Infrastructure.Repositories;
 
 namespace proyecto.api
 {
@@ -25,7 +32,18 @@ namespace proyecto.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddCors();
+
+            services.AddControllers().AddNewtonsoftJson(x =>
+                x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize);
+            services.AddHttpContextAccessor();
+            services.AddDbContext<ProyectoDbContext>((s, o) => o.UseSqlite("Data Source=data.db"));
+            services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
+            services.AddScoped<IGroceryListService, GroceryListService>();
+            services.AddScoped<IIngredientService, IngredientService>();
+            services.AddScoped<IRecipeService, RecipeService>();
+            services.AddScoped<IReminderService, ReminderService>();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
