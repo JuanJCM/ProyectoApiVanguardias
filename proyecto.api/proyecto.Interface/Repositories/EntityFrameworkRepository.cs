@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using proyecto.Core.Entities;
-using proyecto.Core.Repositories;
+using proyecto.Core.IRepositories;
 
 namespace proyecto.Infrastructure.Repositories
 {

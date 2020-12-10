@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using proyecto.Core.Entities;
 using proyecto.Core.Interfaces;
-using proyecto.Core.Repositories;
+using proyecto.Core.IRepositories;
 
 namespace proyecto.Core.Services
 {

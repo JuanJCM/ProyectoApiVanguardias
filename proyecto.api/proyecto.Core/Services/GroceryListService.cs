@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using proyecto.Core.Entities;
 using proyecto.Core.Interfaces;
-using proyecto.Core.Repositories;
+using proyecto.Core.IRepositories;
 
 namespace proyecto.Core.Services
 {
@@ -25,19 +25,19 @@ namespace proyecto.Core.Services
             return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Add(groceryList));
         }
 
-        public ServiceResult<GroceryList> AddToList(Ingredient ingredient)
+        public ServiceResult<Ingredient> AddToList(Ingredient ingredient)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.AddToList(ingredient));
+            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.AddToList(ingredient));
         }
 
-        public ServiceResult<GroceryList> RemoveFromList(Ingredient ingredient)
+        public ServiceResult<Ingredient> RemoveFromList(Ingredient ingredient)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.RemoveFromList(ingredient));
+            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.RemoveFromList(ingredient));
         }
 
-        public ServiceResult<GroceryList> ClearList(int id)
+        public void ClearList(int id)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.ClearList(id));
+            _groceryListRepository.ClearList(id);
         }
 
         public ServiceResult<IEnumerable<GroceryList>> GetAll()
