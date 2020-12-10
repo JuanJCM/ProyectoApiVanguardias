@@ -11,31 +11,53 @@ namespace proyecto.Core.Services
 {
     public class GroceryListService : IGroceryListService
     {
-        private readonly IRepository<GroceryList> _groceryListRepository;
+        private readonly IRepository<GroceryList> _groceryListIRepository;
+        private readonly IGroceryListRepository<GroceryList> _groceryListRepository;
 
-        public GroceryListService(IRepository<GroceryList> groceryListRepository)
+        public GroceryListService(IRepository<GroceryList> groceryListIRepository, IGroceryListRepository<GroceryList> groceryListRepository)
         {
+            _groceryListIRepository = groceryListIRepository;
             _groceryListRepository = groceryListRepository;
         }
 
-        public ServiceResult<GroceryList> Add(GroceryList groceryList)
+        public ServiceResult<GroceryList> NewList(GroceryList groceryList)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.Add(groceryList));
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Add(groceryList));
+        }
+
+        public ServiceResult<GroceryList> AddToList(int listId, Ingredient ingredient)
+        {
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.AddToList(listId, ingredient));
+        }
+
+        public ServiceResult<GroceryList> RemoveFromList(int listId, Ingredient ingredient)
+        {
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.RemoveFromList(listId, ingredient));
+        }
+
+        public ServiceResult<GroceryList> ClearList(int id)
+        {
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.ClearList(id));
         }
 
         public ServiceResult<IEnumerable<GroceryList>> GetAll()
         {
-            return ServiceResult<IEnumerable<GroceryList>>.SuccessResult(_groceryListRepository.GetAll());
+            return ServiceResult<IEnumerable<GroceryList>>.SuccessResult(_groceryListIRepository.GetAll());
         }
 
         public ServiceResult<GroceryList> GetByID(int Id)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.GetById(Id));
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.GetById(Id));
         }
 
         public ServiceResult<GroceryList> Update(GroceryList groceryList)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.Update(groceryList));
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Update(groceryList));
+        }
+
+        public ServiceResult<IEnumerable<GroceryList>> GetAllFromUser(int userId)
+        {
+            return ServiceResult<IEnumerable<GroceryList>>.SuccessResult(_groceryListRepository.GetFromUser(userId));
         }
     }
 }

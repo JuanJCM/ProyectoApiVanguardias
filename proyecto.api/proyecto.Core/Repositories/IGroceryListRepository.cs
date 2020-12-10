@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace proyecto.Core.Repositories
 {
-    public interface IIngredientRepository<T>
+    public interface IGroceryListRepository<T>
     {
-        T AddToList(Ingredient ingredient, int id);
+        T AddToList(int listId, Ingredient ingredient);
 
-        IEnumerable<T> GetFromList(int id);
+        T RemoveFromList(int listId, Ingredient ingredient);
+
+        T ClearList(int listId);
 
         IEnumerable<T> GetFromUser(int userId);
     }
