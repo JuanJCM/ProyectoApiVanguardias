@@ -19,9 +19,9 @@ namespace proyecto.Core.Interfaces
 
         ServiceResult<GroceryList> Update(GroceryList groceryList);
 
-        ServiceResult<GroceryList> AddToList(int listId, Ingredient ingredient);
+        ServiceResult<GroceryList> AddToList(Ingredient ingredient);
 
-        ServiceResult<GroceryList> RemoveFromList(int listId, Ingredient ingredient);
+        ServiceResult<GroceryList> RemoveFromList(Ingredient ingredient);
 
         ServiceResult<GroceryList> ClearList(int id);
 

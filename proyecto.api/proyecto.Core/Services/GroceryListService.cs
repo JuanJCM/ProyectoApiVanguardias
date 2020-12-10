@@ -25,14 +25,14 @@ namespace proyecto.Core.Services
             return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Add(groceryList));
         }
 
-        public ServiceResult<GroceryList> AddToList(int listId, Ingredient ingredient)
+        public ServiceResult<GroceryList> AddToList(Ingredient ingredient)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.AddToList(listId, ingredient));
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.AddToList(ingredient));
         }
 
-        public ServiceResult<GroceryList> RemoveFromList(int listId, Ingredient ingredient)
+        public ServiceResult<GroceryList> RemoveFromList(Ingredient ingredient)
         {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.RemoveFromList(listId, ingredient));
+            return ServiceResult<GroceryList>.SuccessResult(_groceryListRepository.RemoveFromList(ingredient));
         }
 
         public ServiceResult<GroceryList> ClearList(int id)

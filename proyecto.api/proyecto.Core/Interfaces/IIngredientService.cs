@@ -13,8 +13,6 @@ namespace proyecto.Core.Interfaces
 
         ServiceResult<Ingredient> GetByID(int Id);
 
-        ServiceResult<Ingredient> AddToList(Ingredient ingredient, int id);
-
         ServiceResult<Ingredient> Update(Ingredient ingredient);
 
     }
