@@ -9,9 +9,9 @@ namespace proyecto.Core.IRepositories
 {
     public interface IGroceryListRepository<T>
     {
-        Ingredient AddToList(Ingredient ingredient);
+        Ingredient AddIngredientToList(Ingredient ingredient);
 
-        Ingredient RemoveFromList(Ingredient ingredient);
+        Ingredient RemoveIngredientFromList(Ingredient ingredient);
 
         void ClearList(int listId);
 

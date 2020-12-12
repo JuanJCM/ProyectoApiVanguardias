@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace proyecto.api.Models
 {
-    public class Ingredient
+    public class IngredientDto
     {
         public int Id { get; set; }
         public int ListId { get; set; }
-        public string description { get; set; }
+        public string Description { get; set; }
     }
 }

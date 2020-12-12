@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using proyecto.api.Models;
+using proyecto.Core.Enums;
+using proyecto.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +14,47 @@ namespace proyecto.api.Controllers
     [ApiController]
     public class IngredientController : ControllerBase
     {
+        private readonly IIngredientService _ingredientService;
+
+        public IngredientController(IIngredientService ingredientService)
+        {
+            _ingredientService = ingredientService;
+        }
+
+
+        [HttpGet]
+        [Route("")]
+        public ActionResult<IEnumerable<IngredientDto>> GetIngredientsFromList(int listId)
+        {
+            var ServiceResult = _ingredientService.GetIngredientsFromList(listId);
+            if (ServiceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(ServiceResult.Error);
+
+            return Ok(ServiceResult.Result.Select(i => new IngredientDto
+            {
+                Id = i.Id,
+                Description = i.Description,
+                ListId = i.ListId
+            }));
+        }
+
+        [HttpGet]
+        [Route("/ingredientId")]
+        public ActionResult<IngredientDto> GetById(int id)
+        {
+            var ServiceResult = _ingredientService.GetByID(id);
+            if (ServiceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(ServiceResult.Error);
+
+            var result = new IngredientDto
+            {
+                Id = ServiceResult.Result.Id,
+                Description = ServiceResult.Result.Description,
+                ListId = ServiceResult.Result.ListId
+            };
+
+            return Ok(result);
+        }
+
     }
 }

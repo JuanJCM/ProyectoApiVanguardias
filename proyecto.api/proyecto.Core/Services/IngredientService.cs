@@ -20,24 +20,15 @@ namespace proyecto.Core.Services
             _ingredientRepository = ingredientRepository;
         }
 
-        public ServiceResult<Ingredient> AddToList(Ingredient ingredient, int id)
-        {
-            return ServiceResult<Ingredient>.SuccessResult(_ingredientRepository.AddToList(ingredient, id));
-        }
-
         public ServiceResult<Ingredient> GetByID(int Id)
         {
             return ServiceResult<Ingredient>.SuccessResult(_ingredientListIRepository.GetById(Id));
         }
 
-        public ServiceResult<IEnumerable<Ingredient>> GetFromList(int Id)
+        public ServiceResult<IEnumerable<Ingredient>> GetIngredientsFromList(int Id)
         {
-            return ServiceResult<IEnumerable<Ingredient>>.SuccessResult(_ingredientRepository.GetFromList(Id));
+            return ServiceResult<IEnumerable<Ingredient>>.SuccessResult(_ingredientRepository.GetIngredientsFromList(Id));
         }
 
-        public ServiceResult<Ingredient> Update(Ingredient ingredient)
-        {
-            return ServiceResult<Ingredient>.SuccessResult(_ingredientListIRepository.Update(ingredient));
-        }
     }
 }

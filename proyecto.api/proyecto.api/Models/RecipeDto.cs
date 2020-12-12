@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace proyecto.api.Models
 {
-    public class Reminder
+    public class RecipeDto
     {
         public int Id { get; set; }
         public int UserId { get; set; }
         public string Description { get; set; }
-        public string Message { get; set; }
-        public DateTime DateDue { get; set; }
+        public IEnumerable<IngredientDto> Ingredients { get; set; }
     }
 }

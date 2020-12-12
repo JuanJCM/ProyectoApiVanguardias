@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 namespace proyecto.Core.IRepositories
 {
     public interface IIngredientRepository<T>
-    {
-        Ingredient AddToList(Ingredient ingredient);
-
-        IEnumerable<Ingredient> GetFromList(int listId);
+    { 
+        IEnumerable<Ingredient> GetIngredientsFromList(int listId);
     }
 }

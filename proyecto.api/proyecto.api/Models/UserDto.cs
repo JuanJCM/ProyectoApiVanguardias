@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace proyecto.api.Models
 {
-    public class User
+    public class UserDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

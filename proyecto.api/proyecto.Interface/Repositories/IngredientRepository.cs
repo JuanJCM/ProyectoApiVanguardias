@@ -18,14 +18,7 @@ namespace proyecto.Infrastructure.Repositories
             _context = context;
         }
 
-        public Ingredient AddToList(Ingredient ingredient)
-        {
-            _context.Ingredient.Add(ingredient);
-            _context.SaveChanges();
-            return ingredient;
-        }
-
-        public IEnumerable<Ingredient> GetFromList(int listId)
+        public IEnumerable<Ingredient> GetIngredientsFromList(int listId)
         {
             return _context.Ingredient.Where(i => i.ListId == listId);
         }

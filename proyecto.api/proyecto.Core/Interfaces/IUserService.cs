@@ -15,6 +15,5 @@ namespace proyecto.Core.Interfaces
 
         ServiceResult<User> Add(User user);
 
-        ServiceResult<User> Update(User user);
     }
 }

@@ -25,14 +25,14 @@ namespace proyecto.Core.Services
             return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Add(groceryList));
         }
 
-        public ServiceResult<Ingredient> AddToList(Ingredient ingredient)
+        public ServiceResult<Ingredient> AddIngredientToList(Ingredient ingredient)
         {
-            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.AddToList(ingredient));
+            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.AddIngredientToList(ingredient));
         }
 
-        public ServiceResult<Ingredient> RemoveFromList(Ingredient ingredient)
+        public ServiceResult<Ingredient> RemoveIngredientFromList(Ingredient ingredient)
         {
-            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.RemoveFromList(ingredient));
+            return ServiceResult<Ingredient>.SuccessResult(_groceryListRepository.RemoveIngredientFromList(ingredient));
         }
 
         public void ClearList(int id)
@@ -48,11 +48,6 @@ namespace proyecto.Core.Services
         public ServiceResult<GroceryList> GetByID(int Id)
         {
             return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.GetById(Id));
-        }
-
-        public ServiceResult<GroceryList> Update(GroceryList groceryList)
-        {
-            return ServiceResult<GroceryList>.SuccessResult(_groceryListIRepository.Update(groceryList));
         }
 
         public ServiceResult<IEnumerable<GroceryList>> GetAllFromUser(int userId)

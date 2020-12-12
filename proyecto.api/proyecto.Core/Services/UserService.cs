@@ -32,10 +32,5 @@ namespace proyecto.Core.Services
         {
             return ServiceResult<User>.SuccessResult(_userRepository.GetById(id));
         }
-
-        ServiceResult<User> IUserService.Update(User user)
-        {
-            return ServiceResult<User>.SuccessResult(_userRepository.Update(user));
-        }
     }
 }

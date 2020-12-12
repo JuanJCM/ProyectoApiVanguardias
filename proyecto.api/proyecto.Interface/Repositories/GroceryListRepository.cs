@@ -26,10 +26,12 @@ namespace proyecto.Infrastructure.Repositories
 
         public IEnumerable<GroceryList> GetFromUser(int userId)
         {
-            return _context.List.Where(x => x.Id == userId).ToList();
+            return _context.List.Where(x => x.Id == userId)
+                .Include(x => x.Items)
+                .ToList();
         }
 
-        public Ingredient RemoveFromList(Ingredient ingredient)
+        public Ingredient RemoveIngredientFromList(Ingredient ingredient)
         {
             _context.Ingredient.Attach(ingredient);
             ingredient.IsDeleted = true;
@@ -39,7 +41,7 @@ namespace proyecto.Infrastructure.Repositories
             return ingredient;
         }
 
-        public Ingredient AddToList(Ingredient ingredient)
+        public Ingredient AddIngredientToList(Ingredient ingredient)
         {
             _context.Ingredient.Add(ingredient);
             _context.SaveChanges();

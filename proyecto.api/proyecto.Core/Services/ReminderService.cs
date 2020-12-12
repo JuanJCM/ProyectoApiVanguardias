@@ -20,7 +20,7 @@ namespace proyecto.Core.Services
             _reminderRepository = reminderRepository;
         }
 
-        public ServiceResult<IEnumerable<Reminder>> GetAllFromUser(int userId)
+        public ServiceResult<IEnumerable<Reminder>> GetAllRemindersFromUser(int userId)
         {
             return ServiceResult<IEnumerable<Reminder>>.SuccessResult(_reminderRepository.GetFromUser(userId));
         }
@@ -40,9 +40,5 @@ namespace proyecto.Core.Services
             return ServiceResult<Reminder>.SuccessResult(_reminderIRepository.GetById(id));
         }
 
-        ServiceResult<Reminder> IReminderService.Update(Reminder reminder)
-        {
-            return ServiceResult<Reminder>.SuccessResult(_reminderIRepository.Update(reminder));
-        }
     }
 }

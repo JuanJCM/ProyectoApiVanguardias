@@ -9,11 +9,9 @@ namespace proyecto.Core.Interfaces
 {
     public interface IIngredientService
     {
-        ServiceResult<IEnumerable<Ingredient>> GetFromList(int Id);
+        ServiceResult<IEnumerable<Ingredient>> GetIngredientsFromList(int Id);
 
         ServiceResult<Ingredient> GetByID(int Id);
-
-        ServiceResult<Ingredient> Update(Ingredient ingredient);
 
     }
 }
