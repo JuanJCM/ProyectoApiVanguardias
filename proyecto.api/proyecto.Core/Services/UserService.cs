@@ -12,9 +12,9 @@ namespace proyecto.Core.Services
     public class UserService : IUserService
     {
         private readonly IRepository<User> _userIRepository;
-        private readonly IUserRepository<User> _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(IRepository<User> userIRepository, IUserRepository<User> userRepository)
+        public UserService(IRepository<User> userIRepository, IUserRepository userRepository)
         {
             _userIRepository = userIRepository;
             _userRepository = userRepository;

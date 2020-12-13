@@ -16,8 +16,8 @@ using Microsoft.Extensions.Logging;
 using proyecto.Core.Interfaces;
 using proyecto.Core.IRepositories;
 using proyecto.Core.Services;
-using proyecto.Infrastructure;
 using proyecto.Infrastructure.Repositories;
+using proyecto.Infrastructure;
 
 namespace proyecto.api
 {
@@ -45,6 +45,9 @@ namespace proyecto.api
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IReminderService, ReminderService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IGroceryListRepository, GroceryListRepository>();
+            services.AddScoped<IReminderRepository, ReminderRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

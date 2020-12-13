@@ -12,12 +12,10 @@ namespace proyecto.Core.Services
     public class IngredientService : IIngredientService
     {
         private readonly IRepository<Ingredient> _ingredientListIRepository;
-        private readonly IIngredientRepository<Ingredient> _ingredientRepository;
 
-        public IngredientService(IRepository<Ingredient> ingredientIRepository, IIngredientRepository<Ingredient> ingredientRepository)
+        public IngredientService(IRepository<Ingredient> ingredientIRepository)
         {
             _ingredientListIRepository = ingredientIRepository;
-            _ingredientRepository = ingredientRepository;
         }
 
         public ServiceResult<Ingredient> GetByID(int Id)

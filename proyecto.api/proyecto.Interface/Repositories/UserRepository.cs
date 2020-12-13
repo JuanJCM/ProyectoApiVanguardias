@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace proyecto.Infrastructure.Repositories
 {
-    class UserRepository<T> : IUserRepository<T>
+    public class UserRepository : IUserRepository
     {
         protected readonly ProyectoDbContext _context;
 

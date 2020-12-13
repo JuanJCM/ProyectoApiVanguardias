@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyecto.Core.IRepositories
 {
-    public interface IGroceryListRepository<T>
+    public interface IGroceryListRepository
     {
         Ingredient AddIngredientToList(Ingredient ingredient);
 

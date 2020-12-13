@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyecto.Core.IRepositories
 {
-    public interface IReminderRepository<T>
+    public interface IReminderRepository
     {
         IEnumerable<Reminder> GetFromUser(int userId);
     }
