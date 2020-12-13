@@ -11,26 +11,38 @@ namespace proyecto.Core.Services
 {
     public class UserService : IUserService
     {
-        private readonly IRepository<User> _userRepository;
+        private readonly IRepository<User> _userIRepository;
+        private readonly IUserRepository<User> _userRepository;
 
-        public UserService(IRepository<User> userRepository)
+        public UserService(IRepository<User> userIRepository, IUserRepository<User> userRepository)
         {
+            _userIRepository = userIRepository;
             _userRepository = userRepository;
+        }
+
+        public ServiceResult<IEnumerable<GroceryList>> GetAllListsFromUser(int userId)
+        {
+            return ServiceResult<IEnumerable<GroceryList>>.SuccessResult(_userRepository.GetAllListsFromUser(userId));
+        }
+
+        public ServiceResult<IEnumerable<Reminder>> GetAllRemindersFromUser(int userId)
+        {
+            return ServiceResult<IEnumerable<Reminder>>.SuccessResult(_userRepository.GetAllRemindersFromUser(userId));
         }
 
         ServiceResult<User> IUserService.Add(User user)
         {
-            return ServiceResult<User>.SuccessResult(_userRepository.Add(user));
+            return ServiceResult<User>.SuccessResult(_userIRepository.Add(user));
         }
 
         ServiceResult<IEnumerable<User>> IUserService.GetAll()
         {
-            return ServiceResult<IEnumerable<User>>.SuccessResult( _userRepository.GetAll());
+            return ServiceResult<IEnumerable<User>>.SuccessResult(_userIRepository.GetAll());
         }
 
         ServiceResult<User> IUserService.GetById(int id)
         {
-            return ServiceResult<User>.SuccessResult(_userRepository.GetById(id));
+            return ServiceResult<User>.SuccessResult(_userIRepository.GetById(id));
         }
     }
 }

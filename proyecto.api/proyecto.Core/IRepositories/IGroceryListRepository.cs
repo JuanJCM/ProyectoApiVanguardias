@@ -15,6 +15,8 @@ namespace proyecto.Core.IRepositories
 
         void ClearList(int listId);
 
+        IEnumerable<Ingredient> GetIngredientsFromList(int listId);
+
         IEnumerable<GroceryList> GetFromUser(int userId);
     }
 }

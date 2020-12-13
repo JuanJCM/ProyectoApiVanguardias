@@ -25,10 +25,5 @@ namespace proyecto.Core.Services
             return ServiceResult<Ingredient>.SuccessResult(_ingredientListIRepository.GetById(Id));
         }
 
-        public ServiceResult<IEnumerable<Ingredient>> GetIngredientsFromList(int Id)
-        {
-            return ServiceResult<IEnumerable<Ingredient>>.SuccessResult(_ingredientRepository.GetIngredientsFromList(Id));
-        }
-
     }
 }

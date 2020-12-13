@@ -18,9 +18,5 @@ namespace proyecto.Infrastructure.Repositories
             _context = context;
         }
 
-        public IEnumerable<Ingredient> GetIngredientsFromList(int listId)
-        {
-            return _context.Ingredient.Where(i => i.ListId == listId);
-        }
     }
 }

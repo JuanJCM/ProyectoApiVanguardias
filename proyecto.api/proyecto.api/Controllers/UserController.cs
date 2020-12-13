@@ -53,6 +53,46 @@ namespace proyecto.api.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        [Route("{id}/lists")]
+        public ActionResult<GroceryListDto> GetAllListsFromUser(int userId)
+        {
+            var ServiceResult = _userService.GetAllListsFromUser(userId);
+            if (ServiceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(ServiceResult.Error);
+
+            return Ok(ServiceResult.Result.Select(l => new GroceryListDto
+            {
+                Id = l.Id,
+                Description = l.Description,
+                UserId = l.UserId,
+                Ingredients = l.Items.Select(i => new IngredientDto
+                {
+                    Id = i.Id,
+                    Description = i.Description,
+                    ListId = i.ListId
+                })
+            }));
+        }
+
+        [HttpGet]
+        [Route("{id}/reminders")]
+        public ActionResult<ReminderDto> GetAllRemindersFromUser(int userId)
+        {
+            var ServiceResult = _userService.GetAllRemindersFromUser(userId);
+            if (ServiceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(ServiceResult.Error);
+
+            return Ok(ServiceResult.Result.Select(r => new ReminderDto
+            {
+                Id = r.Id,
+                Description = r.Description,
+                Message = r.Message,
+                DateDue = r.DateDue,
+                UserId = r.UserId
+            }));
+        }
+
         [HttpPost]
         public ActionResult<GroceryListDto> NewList([FromBody] User user)
         {

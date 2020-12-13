@@ -21,23 +21,6 @@ namespace proyecto.api.Controllers
             _ingredientService = ingredientService;
         }
 
-
-        [HttpGet]
-        [Route("")]
-        public ActionResult<IEnumerable<IngredientDto>> GetIngredientsFromList(int listId)
-        {
-            var ServiceResult = _ingredientService.GetIngredientsFromList(listId);
-            if (ServiceResult.ResponseCode != ResponseCode.Success)
-                return BadRequest(ServiceResult.Error);
-
-            return Ok(ServiceResult.Result.Select(i => new IngredientDto
-            {
-                Id = i.Id,
-                Description = i.Description,
-                ListId = i.ListId
-            }));
-        }
-
         [HttpGet]
         [Route("/ingredientId")]
         public ActionResult<IngredientDto> GetById(int id)

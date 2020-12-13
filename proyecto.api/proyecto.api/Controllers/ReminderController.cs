@@ -41,7 +41,7 @@ namespace proyecto.api.Controllers
 
 
         [HttpGet]
-        [Route("{reminderId}")]
+        [Route("{userId}")]
         public ActionResult<ReminderDto> GetAllRemindersFromUser(int id)
         {
             var ServiceResult = _reminderListService.GetAllRemindersFromUser(id);

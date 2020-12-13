@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace proyecto.Core.IRepositories
 {
-    public interface IIngredientRepository<T>
-    { 
+    public interface IUserRepository<T>
+    {
+        IEnumerable<GroceryList> GetAllListsFromUser(int userId);
+
+        IEnumerable<Reminder> GetAllRemindersFromUser(int userId);
     }
 }

@@ -3,6 +3,7 @@ using proyecto.Core.IRepositories;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using proyecto.Core;
 
 namespace proyecto.Infrastructure.Repositories
 {
@@ -46,6 +47,11 @@ namespace proyecto.Infrastructure.Repositories
             _context.Ingredient.Add(ingredient);
             _context.SaveChanges();
             return ingredient;
+        }
+
+        public IEnumerable<Ingredient> GetIngredientsFromList(int listId)
+        {
+            return _context.Ingredient.Where(i => i.ListId == listId);
         }
     }
 }

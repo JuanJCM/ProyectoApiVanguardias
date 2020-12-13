@@ -15,5 +15,9 @@ namespace proyecto.Core.Interfaces
 
         ServiceResult<User> Add(User user);
 
+        ServiceResult<IEnumerable<Reminder>> GetAllRemindersFromUser(int userId);
+
+        ServiceResult<IEnumerable<GroceryList>> GetAllListsFromUser(int userId);
+
     }
 }

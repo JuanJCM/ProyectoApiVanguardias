@@ -20,6 +20,8 @@ namespace proyecto.Core.Interfaces
         ServiceResult<Ingredient> AddIngredientToList(Ingredient ingredient);
 
         ServiceResult<Ingredient> RemoveIngredientFromList(Ingredient ingredient);
+        
+        ServiceResult<IEnumerable<Ingredient>> GetIngredientsFromList(int listId);
 
         void ClearList(int id);
 

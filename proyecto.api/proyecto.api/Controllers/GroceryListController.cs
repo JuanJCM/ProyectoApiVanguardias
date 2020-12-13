@@ -69,7 +69,7 @@ namespace proyecto.api.Controllers
         }
 
         [HttpGet]
-        [Route("{/Users/{userId}")]
+        [Route("users/{userId}")]
         public ActionResult<IEnumerable<GroceryListDto>> GetAllFromUser(int userId)
         {
             var ServiceResult = _groceryListService.GetAllFromUser(userId);
@@ -130,9 +130,11 @@ namespace proyecto.api.Controllers
             return Ok(result);
         }
 
-        [HttpPatch]
-        public ActionResult<Ingredient> RemoveIngredientFromList(Ingredient ingredient)
+        [HttpPatch("{id}/ingredients")]
+        
+        public ActionResult<Ingredient> RemoveIngredientFromList(int Id, [FromBody] Ingredient ingredient)
         {
+            ingredient.ListId = Id;
             var ServiceResult = _groceryListService.RemoveIngredientFromList(ingredient);
             if (ServiceResult.ResponseCode != ResponseCode.Success)
                 return BadRequest(ServiceResult.Error);
@@ -147,7 +149,21 @@ namespace proyecto.api.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        [Route("{id}/ingredients")]
 
-       
+        public ActionResult<IEnumerable<Ingredient>> GetIngredientsFromList(int Id)
+        {
+            var ServiceResult = _groceryListService.GetIngredientsFromList(Id);
+            if (ServiceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(ServiceResult.Error);
+
+            return Ok(ServiceResult.Result.Select(i => new IngredientDto
+            {
+                Id = i.Id,
+                Description = i.Description,
+                ListId = i.ListId
+            }));
+        }
     }
 }

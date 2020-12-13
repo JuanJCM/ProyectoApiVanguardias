@@ -54,5 +54,10 @@ namespace proyecto.Core.Services
         {
             return ServiceResult<IEnumerable<GroceryList>>.SuccessResult(_groceryListRepository.GetFromUser(userId));
         }
+
+        public ServiceResult<IEnumerable<Ingredient>> GetIngredientsFromList(int Id)
+        {
+            return ServiceResult<IEnumerable<Ingredient>>.SuccessResult(_groceryListRepository.GetIngredientsFromList(Id));
+        }
     }
 }
