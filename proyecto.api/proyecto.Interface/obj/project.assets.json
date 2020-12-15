@@ -1232,23 +1232,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Juan Carranza\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ejzp_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
       "projectName": "proyecto.Infrastructure",
-      "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
+      "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1262,8 +1258,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
-              "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+            "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
             }
           }
         }
@@ -1315,7 +1311,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

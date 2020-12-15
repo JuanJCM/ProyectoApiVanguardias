@@ -7,7 +7,7 @@ using proyecto.Core;
 
 namespace proyecto.Infrastructure.Repositories
 {
-    class GroceryListRepository<T> : IGroceryListRepository<T>
+    public class GroceryListRepository : IGroceryListRepository
     {
         protected readonly ProyectoDbContext _context;
 

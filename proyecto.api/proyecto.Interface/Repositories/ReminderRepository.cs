@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace proyecto.Infrastructure.Repositories
 {
-    class ReminderRepository<T> : IReminderRepository<T>
+    public class ReminderRepository : IReminderRepository
     {
         protected readonly ProyectoDbContext _context;
 

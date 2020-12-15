@@ -12,9 +12,9 @@ namespace proyecto.Core.Services
     public class GroceryListService : IGroceryListService
     {
         private readonly IRepository<GroceryList> _groceryListIRepository;
-        private readonly IGroceryListRepository<GroceryList> _groceryListRepository;
+        private readonly IGroceryListRepository _groceryListRepository;
 
-        public GroceryListService(IRepository<GroceryList> groceryListIRepository, IGroceryListRepository<GroceryList> groceryListRepository)
+        public GroceryListService(IRepository<GroceryList> groceryListIRepository, IGroceryListRepository groceryListRepository)
         {
             _groceryListIRepository = groceryListIRepository;
             _groceryListRepository = groceryListRepository;

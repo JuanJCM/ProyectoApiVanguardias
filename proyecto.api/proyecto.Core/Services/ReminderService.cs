@@ -12,9 +12,9 @@ namespace proyecto.Core.Services
     public class ReminderService : IReminderService
     {
         private readonly IRepository<Reminder> _reminderIRepository;
-        private readonly IReminderRepository<Reminder> _reminderRepository;
+        private readonly IReminderRepository _reminderRepository;
 
-        public ReminderService(IRepository<Reminder> reminderIRepository, IReminderRepository<Reminder> reminderRepository)
+        public ReminderService(IRepository<Reminder> reminderIRepository, IReminderRepository reminderRepository)
         {
             _reminderIRepository = reminderIRepository;
             _reminderRepository = reminderRepository;

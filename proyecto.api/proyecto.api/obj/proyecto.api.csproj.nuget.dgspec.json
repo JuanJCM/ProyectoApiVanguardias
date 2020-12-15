@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {}
+    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {
+    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
         "projectName": "proyecto.api",
-        "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
-        "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.api\\obj\\",
+        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
+        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
-                "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
               },
-              "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj"
+              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj"
               }
             }
           }
@@ -52,21 +49,17 @@
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Microsoft.Bot.Builder.AI.Luis": {
-              "target": "Package",
-              "version": "[4.11.1, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -87,24 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
         "projectName": "proyecto.Core",
-        "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
-        "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
+        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,24 +153,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
+    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
         "projectName": "proyecto.Infrastructure",
-        "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
+        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -194,8 +181,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
-                "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
               }
             }
           }
@@ -247,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
