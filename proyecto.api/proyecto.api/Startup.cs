@@ -45,6 +45,7 @@ namespace proyecto.api
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IReminderService, ReminderService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<LuisHelper.LuisHelper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

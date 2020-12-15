@@ -1208,19 +1208,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ejzp_\\.nuget\\packages\\": {}
+    "C:\\Users\\Juan Carranza\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
       "projectName": "proyecto.Core",
-      "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
-      "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
+      "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+      "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1279,7 +1283,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

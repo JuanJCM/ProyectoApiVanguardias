@@ -56,3 +56,12 @@ C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net
 C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\ref\proyecto.api.dll
 C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.pdb
 C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.genruntimeconfig.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.csprojAssemblyReference.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.AssemblyInfoInputs.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.AssemblyInfo.cs
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.csproj.CoreCompileInputs.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.dll
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\ref\proyecto.api.dll
+C:\Users\Juan Carranza\Documents\GitHub\proyecto.api\proyecto.api\proyecto.api\obj\Debug\net5.0\proyecto.api.pdb
