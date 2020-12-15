@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace proyecto.api.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController : Controller
     {
         private readonly IUserService _userService;

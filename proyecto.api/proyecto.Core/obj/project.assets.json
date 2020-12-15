@@ -1213,11 +1213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
       "projectName": "proyecto.Core",
-      "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+      "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
       "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
+      "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",

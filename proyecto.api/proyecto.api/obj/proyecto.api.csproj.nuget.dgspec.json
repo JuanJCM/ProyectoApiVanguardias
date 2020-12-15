@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {}
+    "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {
+    "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
         "projectName": "proyecto.api",
-        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
+        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\proyecto.api.csproj",
         "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.api\\obj\\",
+        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
-                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+              "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
               },
-              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj"
+              "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -84,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+    "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
         "projectName": "proyecto.Core",
-        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
+        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj",
         "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
+        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -157,14 +161,14 @@
         }
       }
     },
-    "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
+    "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
         "projectName": "proyecto.Infrastructure",
-        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
+        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,8 +185,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
-                "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
+              "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Core\\proyecto.Core.csproj"
               }
             }
           }
