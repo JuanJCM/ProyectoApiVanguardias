@@ -30,17 +30,17 @@ namespace proyecto.Core.Services
             return ServiceResult<IEnumerable<Reminder>>.SuccessResult(_userRepository.GetAllRemindersFromUser(userId));
         }
 
-        ServiceResult<User> IUserService.Add(User user)
+        public ServiceResult<User> Add(User user)
         {
             return ServiceResult<User>.SuccessResult(_userIRepository.Add(user));
         }
 
-        ServiceResult<IEnumerable<User>> IUserService.GetAll()
+        public ServiceResult<IEnumerable<User>> GetAll()
         {
             return ServiceResult<IEnumerable<User>>.SuccessResult(_userIRepository.GetAll());
         }
 
-        ServiceResult<User> IUserService.GetById(int id)
+        public ServiceResult<User> GetById(int id)
         {
             return ServiceResult<User>.SuccessResult(_userIRepository.GetById(id));
         }

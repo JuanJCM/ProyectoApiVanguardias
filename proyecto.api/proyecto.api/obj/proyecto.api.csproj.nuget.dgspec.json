@@ -33,6 +33,9 @@
               },
               "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Interface\\proyecto.Infrastructure.csproj"
+              },
+              "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\proyecto.Luis.csproj": {
+                "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\proyecto.Luis.csproj"
               }
             }
           }
@@ -218,6 +221,89 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\proyecto.Luis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\proyecto.Luis.csproj",
+        "projectName": "proyecto.Luis",
+        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\proyecto.Luis.csproj",
+        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\proyecto.api\\proyecto.api\\proyecto.Luis\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Bot.Builder.AI.Luis": {
+              "target": "Package",
+              "version": "[4.11.1, )"
             }
           },
           "imports": [

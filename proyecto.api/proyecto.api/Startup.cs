@@ -18,6 +18,7 @@ using proyecto.Core.IRepositories;
 using proyecto.Core.Services;
 using proyecto.Infrastructure.Repositories;
 using proyecto.Infrastructure;
+using proyecto.api.Middlewares;
 
 namespace proyecto.api
 {
@@ -58,11 +59,13 @@ namespace proyecto.api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseWhen(IsVerifyRequestNeeded, applicationBuilder => applicationBuilder.UseMiddleware<UserMiddleware>());
+
+            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
 
             app.UseAuthorization();
 
@@ -70,6 +73,11 @@ namespace proyecto.api
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private bool IsVerifyRequestNeeded(HttpContext context)
+        {
+            return !context.Request.Path.StartsWithSegments("/api/user");
         }
     }
 }

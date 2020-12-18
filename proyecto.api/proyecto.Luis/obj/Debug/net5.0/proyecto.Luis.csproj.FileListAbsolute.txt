@@ -1,0 +1,12 @@
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\bin\Debug\net5.0\proyecto.Luis.deps.json
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\bin\Debug\net5.0\proyecto.Luis.dll
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\bin\Debug\net5.0\ref\proyecto.Luis.dll
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\bin\Debug\net5.0\proyecto.Luis.pdb
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.csprojAssemblyReference.cache
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.AssemblyInfoInputs.cache
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.AssemblyInfo.cs
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.csproj.CoreCompileInputs.cache
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.dll
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\ref\proyecto.Luis.dll
+C:\Users\ejzp_\source\repos\proyecto.api\proyecto.api\proyecto.Luis\obj\Debug\net5.0\proyecto.Luis.pdb

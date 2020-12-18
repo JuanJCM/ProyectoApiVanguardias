@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\proyecto.Core\proyecto.Core.csproj" />
     <ProjectReference Include="..\proyecto.Interface\proyecto.Infrastructure.csproj" />
+    <ProjectReference Include="..\proyecto.Luis\proyecto.Luis.csproj" />
   </ItemGroup>
 
   <ItemGroup>

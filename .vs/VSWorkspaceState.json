@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\proyecto.api",
+    "\\proyecto.api\\proyecto.api"
   ],
-  "SelectedNode": "\\proyecto.api.sln",
+  "SelectedNode": "\\proyecto.api\\proyecto.api\\Middlewares",
   "PreviewInSolutionExplorer": false
 }
